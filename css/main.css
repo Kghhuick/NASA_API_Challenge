@@ -14,15 +14,15 @@ box-sizing: border-box;
   height: 800px;
   background-size:100% 100%;
   background-repeat: no-repeat;
-  text-align: center;
-
+  padding-left: 40%;
+  padding-top: 20%;
 
 }
 
 .section_one div span{
   display: inline-block;
-  padding-top: 20%;
-  color: white;
 
+  color: white;
+  font-size: 40px;
 
 }

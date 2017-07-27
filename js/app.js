@@ -9,11 +9,42 @@ $.ajax({
 }).done(function(response)	{
 
         var a = response.hdurl;
-        console.log(a);
+
 				var b = $("div");
-				console.log(b);
-        // $("div").css({"background-image" : a});
+
         $('div').css('background-image', 'url(' + a + ')');
 
 });
-}); 
+
+
+ var urlA ="https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&page=2&api_key=01Wot9xYzTu3re5cf3w4HMAhwcrdntrVJAAvadzv"
+
+ $.ajax({
+ 				method:	"GET",
+ 				url:	urlA,
+ 				dataType:	"json"
+ }).done(function(response)	{
+
+
+			console.log(response);
+			for(var i = 0; i < response.photos.length; i++){
+			console.log(response.photos[i]);
+    }
+ });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+});
