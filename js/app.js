@@ -27,8 +27,18 @@ $.ajax({
 
 
 			console.log(response);
-			for(var i = 0; i < response.photos.length; i++){
-			console.log(response.photos[i]);
+
+			for(var i = 0; i < 5; i++){
+      var c = response.photos[i].img_src;
+			console.log(c);
+
+			var sectionTwo = $(".section_two");
+			var newDivman = $("<div>");
+      sectionTwo.append(newDivman);
+			newDivman.css('background-image', 'url(' + c + ')');
+
+
+
     }
  });
 
