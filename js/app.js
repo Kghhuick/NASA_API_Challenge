@@ -7,12 +7,13 @@ $.ajax({
 				url:	url,
 				dataType:	"json"
 }).done(function(response)	{
-				console.log(response);
-        console.log(response.hdurl);
+
         var a = response.hdurl;
-
-        $("img").attr("src",a);
-
+        console.log(a);
+				var b = $("div");
+				console.log(b);
+        // $("div").css({"background-image" : a});
+        $('div').css('background-image', 'url(' + a + ')');
 
 });
-});
+}); 
