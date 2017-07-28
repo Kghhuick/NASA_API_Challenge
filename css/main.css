@@ -1,42 +1,48 @@
-
-
 * {
-margin: 0 auto;
-padding: 0 auto;
-box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box;
 }
 
 .section_one_div {
-  width:100%;
+  width: 100%;
   height: 600px;
-  background-size:100% 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-left: 40%;
   padding-top: 20%;
   position: relative;
-
 }
 
 .section_one_div span {
   position: absolute;
-  left:40%;
+  left: 40%;
   color: white;
   font-size: 40px;
 }
 
 .div_two {
-width: 100%;
-margin-top: 50px;
-background-color: white;
-height: 1200px; 
-float: left;
+  width: 100%;
+  margin-top: 50px;
+  background-color: white;
+  height: 1200px;
+  float: left;
 }
 
 .div_two div {
   width: 25%;
   height: 200px;
   display: inline-block;
-  margin-left:7%;
+  margin-left: 7%;
+  margin-top: 20px;
+}
 
+button {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  color: black;
+  background-color: grey;
+  margin-left: 45%;
   margin-top: 20px;
 }
