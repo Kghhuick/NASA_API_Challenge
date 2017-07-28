@@ -12,7 +12,7 @@ $.ajax({
 
 				var b = $("div");
 
-        $('div').css('background-image', 'url(' + a + ')');
+        $(".section_one_div").css('background-image', 'url(' + a + ')');
 
 });
 
@@ -28,19 +28,38 @@ $.ajax({
 
 			console.log(response);
 
-			for(var i = 0; i < 5; i++){
+			for(var i = 0; i < 6; i++){
       var c = response.photos[i].img_src;
 			console.log(c);
 
-			var sectionTwo = $(".section_two");
+			var sectionTwo = $(".div_two");
 			var newDivman = $("<div>");
-      sectionTwo.append(newDivman);
+      sectionTwo.prepend(newDivman);
 			newDivman.css('background-image', 'url(' + c + ')');
 
 
 
     }
  });
+
+  var cnt = 0;
+
+  $(".div_two").on("click","div",function(){
+		if(cnt % 2 === 0) {
+  $(".div_two div").hide();
+	var z = $(this);
+	z.css({"width":"100%","height":"100%","margin":"0 0 0 0"});
+  $(this).show();
+  cnt ++;
+	console.log(cnt);
+}else {
+
+	 $(".div_two div").show();
+	 $(".div_two div").css({"width":"20%","height":"20%"});
+	 cnt++;
+}
+	 });
+
 
 
 
